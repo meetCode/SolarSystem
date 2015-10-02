@@ -16,9 +16,11 @@ public class Planet extends Star{
 	@Override
 	public void draw(Graphics g){
 		g.drawImage(img, (int)x, (int)y, null);
+		move();
+	}
+	public void move(){
 		x=center.x+width/2+longAxis*Math.cos(degree);
 		y=center.y+height/2+shortAxis*Math.sin(degree);//width,height使绕中心而不是左上角旋转
-		
 		degree+=speed;
 	}
 	
