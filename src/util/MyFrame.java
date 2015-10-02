@@ -5,13 +5,10 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 
-
 public class MyFrame extends Frame{
-	public static final int GAME_WIDTH=500;
-	public static final int GAME_HEIGH=500;
 	
 	public void lauchFrame(){
-		setSize(GAME_WIDTH,GAME_HEIGH);
+		setSize(Constant.GAME_WIDTH,Constant.GAME_HEIGHT);//TODO 这里为什么不用导入constant包？
 		setLocation(100,100);
 		setVisible(true);
 		
